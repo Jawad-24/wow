@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fridge App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>BASSIRA</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Welcome</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Request a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>EFFICIENT SOLUTIONS</h2>
+        <p>For Your Smart Fridge</p>
+    </main>
+
+    <footer>
+        <p>© 2024 Smart Fridge App. All Rights Reserved.</p>
+        <div class="d-flex justify-content-around p-3">
+            <a href="/inventory" class="btn btn-light text-dark d-flex flex-column align-items-center">
+              <i class="fas fa-clipboard-list fa-2x mb-1"></i>
+              <span class="small">Inventory</span>
+            </a>
+            <a href="/restaurantpage" class="btn btn-light text-dark d-flex flex-column align-items-center">
+              <i class="fas fa-home fa-2x mb-1"></i>
+              <span class="small">Home</span>
+            </a>
+          </div>
+    </footer>
+
+      <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

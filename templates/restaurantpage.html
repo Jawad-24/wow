@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Fridge App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>BASSIRA</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Welcome</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Request a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>EFFICIENT SOLUTIONS</h2>
+        <p>For Your Smart Fridge</p>
+        
+        <div class="grid">
+            <!-- Tabs Section -->
+            <div class="tabs-container">
+                <div id="inventory" class="tab">
+                    <h3>Inventory Management</h3>
+                    <p>Track and manage your fridge inventory with ease.</p>
+                    <button onclick="setActiveTab('inventory')">Go to Inventory</button>
+                </div>
+                <div id="forecasting" class="tab">
+                    <h3>Inventory Forecasting</h3>
+                    <p>Get accurate forecasts of inventory demands.</p>
+                    <button onclick="setActiveTab('forecasting')">Go to Forecasting</button>
+                </div>
+                <div id="signin" class="tab">
+                    <h3>Restaurant Sign-in</h3>
+                    <p>Access your restaurant's smart fridge features.</p>
+                    <button onclick="setActiveTab('signin')">Sign In</button>
+                </div>
+            </div>
+
+            <!-- Fridge Animation Section -->
+            <div class="fridge">
+                <div class="fridge-body">
+                    <div class="door left"></div>
+                    <div class="door right"></div>
+                    <div class="handle top"></div>
+                    <div class="handle bottom"></div>
+                    <div class="divider"></div>
+                    <div class="highlight top"></div>
+                    <div class="highlight bottom"></div>
+                    <div class="shadow-bottom"></div>
+                </div>
+                <div class="fridge-shadow"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Smart Fridge App. All Rights Reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
